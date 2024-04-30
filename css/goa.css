@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+header {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed; /* عشان الهايدر يفضل ثابت لما اعمل سكرول في الصفحه*/
+    z-index: 999;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: black;
+    padding-left: 30px;
+    transition: 0.3s;
+
+}
+.logo:hover{
+    transform: scale(110%);
+    color: blueviolet;
+}
+.links a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    
+    color: black;
+    padding-right: 30px;
+
+}
+.links a:hover{color: blueviolet;
+
+}
+.main{
+    padding-top:150px ;
+    padding-left: 100px;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(386235733_10231389921589948_6052973477371805650_n.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+h2{
+    color: blanchedalmond;
+    font-size: 2em;
+    font-weight: 1000;
+}
+.browse{
+    text-decoration: none;
+    color: blue;
+    background-color: aliceblue;
+    font-size: 1.2em;
+    font-weight: 1000;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.browse:hover{
+    color:aliceblue;
+    background-color:blue;
+    transform: scale(110%);
+}

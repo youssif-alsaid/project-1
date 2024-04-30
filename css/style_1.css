@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*عشان يحتوي الصفحه*/
+    scroll-behavior:smooth;
+}
+body {
+    background-color: #9b958c;
+}
+
+header {
+    background-color: rgb(62 39 109);
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    /* عشان الهايدر يفضل ثابت لما اعمل سكرول في الصفحه*/
+    display: flex;
+    /*هتخلي الكلام جنب بعضوا (links) and (logo)*/
+    justify-content: space-between;
+    /* (links) and (logo)بتعمل مسافه بين */
+    padding: 10px 100px;
+    align-items: center;
+    /* display:flex مينفعشي اعملها الا لما اعمل*/
+}
+
+.logo {
+    color: #e3cba7;
+    text-decoration: none;
+    /*عشان اشيل الخط اللي تحت الينك*/
+    font-weight: 800;
+    /*عشان اتخن الكلمه*/
+    font-size: 1.8em;
+    /*عشان اكبر حجم الكلمه(1.8*16px)*/
+    text-transform: uppercase;
+    /* عشان اخلي الحروف كلها كابيتال*/
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(110%);
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #e3cba7;
+    padding: 1em;
+    transition: 0.3s ease-in;
+
+}
+
+.links a:hover {
+    color: #355ed5;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 100px;
+}
+
+.main {
+    border-radius: 5px;
+    width: 100%;
+    min-height: 100vh;
+    /*معني كده ان اقل ارتفاع 100 وبيزداد مع زياده النصوص */
+    padding-top: 200px;
+    background-image: url(/images/1.jpg);
+    background-size: cover;
+    /*عشان الصورة متكررشي وتعغطي اللصفحه*/
+    background-position: center;
+}
+
+.main h2 {
+    color: #e3cba7;
+    font-size: 1.5em;
+    font-weight: 550;
+    margin-bottom: 10px;
+
+}
+
+.main h2 span {
+    color: rgb(62 39 109);
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    /*عشان inlineعنصر  span عشان عنصر */
+    /* letter-spacing: 2px; */
+}
+
+.main h3 {
+    color: #e3cba7;
+    margin-bottom: 20px;
+    /* margin-top: 10px; */
+}
+
+.potton {
+    text-decoration: none;
+    color: rgb(62 39 109);
+    background-color: #e3cba7;
+    font-size: 20px;
+    font-weight: 1000;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    /*عشان اعمل الحواف بتاعته الزرار*/
+    transition: 0.5s ease-in;
+}
+
+.potton:hover {
+    color: #e3cba7;
+    background-color: rgb(62 39 109);
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    display: inline-block;
+    color: #e3cba7;
+    font-size: 1.5em;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    color: #887558;
+
+}
+.cards {
+    background-color: #c1b7a9;
+    border-radius: 5px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: 950;
+    color: rgb(62 39 109);
+    margin: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #c1b7a9;
+    box-shadow: 0 10px 20px rgba(0 0 0 / 30%);
+    width: 20em;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: 0.5s ease;
+    /* display: flex;
+    justify-content: center; */
+
+}
+.card:hover {
+    transform: scale(1.08);
+}
+.icon {
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+    font-size: 8em;
+    color: rgb(62 39 109);
+}
+.info {
+    text-align:center;
+}
+.info h3 {
+    color: rgb(62 39 109);
+    font-size: 1.5em;
+    padding: 10px;
+}
+.info p {
+    color: #5b492e;
+}
+
+.projects {
+    background-color: #a79d90;
+}
+
+.projects_card {
+    background-color: #c1b7a9;
+    border: 2px solid #706e6a;
+    box-shadow: 0 15px 30px #0000006b;
+    border-radius: 10px;
+    min-height: 14em;
+    width: 21.5em;
+    overflow:hidden;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    transition: 0.4s ease;
+
+}
+
+.projects_card:hover {
+    transform: scale(1.02);
+}
+
+.projects_card:hover .project_img{
+    opacity: 0.9;
+}
+
+.project_img  img{
+    width: 100%;
+}
+
+
+.project_title {
+    margin: 10px;
+    display: flex; 
+    justify-content:space-between;
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+.more_detailes {
+    text-decoration: none;
+    color: rgb(62 39 109);
+    transition: 0.7s ease;
+}
+
+.more_detailes:hover {
+    color: #533d1c ;
+}
+
+.project_info p {
+    color: #5b492e;
+    font-size: 1.1em;
+    margin-left: 10px;
+}
+
+.contact_cards {
+    background-color: #c1b7a9;
+    border-radius: 5px;
+}
+
+.content_contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content_contact .icon {
+    font-size: 6em;
+}
+
+.content_contact .info p{
+    font-size: 1.3em;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color:  rgb(62 39 109);
+    padding:10px ;
+}
+
+.footer .email span {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #8f825c;
+}
+
+.footer .email {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #e3cba7;
+}
